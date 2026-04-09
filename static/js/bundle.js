@@ -45561,7 +45561,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_VanWithDriver__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/VanWithDriver */ "./src/pages/VanWithDriver.jsx");
 /* harmony import */ var _pages_BusWithDriver__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/BusWithDriver */ "./src/pages/BusWithDriver.jsx");
 /* harmony import */ var _pages_TourPackages__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/TourPackages */ "./src/pages/TourPackages.jsx");
-/* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/Contact */ "./src/pages/Contact.jsx");
+/* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pagescontactus.html */ "./src/pagescontactus.html.jsx");
 /* harmony import */ var _pages_Terms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/Terms */ "./src/pages/Terms.jsx");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
@@ -45708,7 +45708,7 @@ function App() {
           lineNumber: 29,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/contact",
+          path: "contactus.html",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_Contact__WEBPACK_IMPORTED_MODULE_12__["default"], {
             "x-file-name": "App",
             "x-line-number": "30",
@@ -46062,7 +46062,7 @@ const Footer = () => {
               "x-id": "Footer_55_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/contact",
+                to: "contactus.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Contact Us"
               }, void 0, false, {
@@ -46650,8 +46650,8 @@ const Header = () => {
             lineNumber: 41,
             columnNumber: 13
           }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/contact",
-            className: `text-base font-medium transition-colors hover:text-[#d4943f] ${isActive('/contact') ? 'text-[#d4943f]' : 'text-white'}`,
+            to: "contactus.html",
+            className: `text-base font-medium transition-colors hover:text-[#d4943f] ${isActive('contactus.html') ? 'text-[#d4943f]' : 'text-white'}`,
             children: "Contact Us"
           }, void 0, false, {
             fileName: _jsxFileName,
@@ -46817,8 +46817,8 @@ const Header = () => {
             lineNumber: 120,
             columnNumber: 15
           }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/contact",
-            className: `text-base font-medium ${isActive('/contact') ? 'text-[#d4943f]' : 'text-white'}`,
+            to: "contactus.html",
+            className: `text-base font-medium ${isActive('contactus.html') ? 'text-[#d4943f]' : 'text-white'}`,
             onClick: () => setIsMenuOpen(false),
             children: "Contact Us"
           }, void 0, false, {
@@ -49477,9 +49477,9 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 
 /***/ },
 
-/***/ "./src/pages/Contact.jsx"
+/***/ "./src/pagescontactus.html.jsx"
 /*!*******************************!*\
-  !*** ./src/pages/Contact.jsx ***!
+  !*** ./src/pagescontactus.html.jsx ***!
   \*******************************/
 (module, __webpack_exports__, __webpack_require__) {
 
@@ -49499,7 +49499,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "/app/frontend/src/pages/Contact.jsx",
+var _jsxFileName = "/app/frontend/src/pagescontactus.html.jsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
