@@ -45618,7 +45618,7 @@ function App() {
           lineNumber: 24,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/carservice.htmls",
+          path: "/carservice.html",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_CarRentals__WEBPACK_IMPORTED_MODULE_7__["default"], {
             "x-file-name": "App",
             "x-line-number": "25",
@@ -45636,7 +45636,7 @@ function App() {
           lineNumber: 25,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/vanservice.htmls",
+          path: "/vanservice.html",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_VanRentals__WEBPACK_IMPORTED_MODULE_8__["default"], {
             "x-file-name": "App",
             "x-line-number": "26",
@@ -46022,7 +46022,7 @@ const Footer = () => {
               "x-id": "Footer_45_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/carservice.htmls",
+                to: "/carservice.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Car Rentals"
               }, void 0, false, {
@@ -46120,7 +46120,7 @@ const Footer = () => {
               "x-id": "Footer_67_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/carservice.htmls",
+                to: "/carservice.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Car Rentals"
               }, void 0, false, {
@@ -46140,7 +46140,7 @@ const Footer = () => {
               "x-id": "Footer_72_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/vanservice.htmls",
+                to: "/vanservice.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Van Rentals"
               }, void 0, false, {
@@ -46501,10 +46501,10 @@ const Header = () => {
   const isActive = path => location.pathname === path;
   const serviceLinks = [{
     name: 'Car Rentals',
-    path: '/carservice.htmls'
+    path: '/carservice.html'
   }, {
     name: 'Van Rentals',
-    path: '/vanservice.htmls'
+    path: '/vanservice.html'
   }, {
     name: 'Van with Driver',
     path: '/vanservicewithdriver.html'
@@ -48543,14 +48543,14 @@ const homeServices = [{
   description: "Wide range of vehicles to suit your needs",
   features: ["Wide Range of Vehicles", "Competitive Pricing", "Well-Maintained Fleet", "Flexible Rental Terms"],
   image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
-  link: "/carservice.htmls"
+  link: "/carservice.html"
 }, {
   id: 2,
   title: "Van Rentals",
   description: "Spacious vans for group travel and cargo",
   features: ["10-15 Seater Options", "Cargo Vans Available", "Airport Transfers", "Daily & Monthly Rates"],
   image: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-  link: "/vanservice.htmls"
+  link: "/vanservice.html"
 }, {
   id: 3,
   title: "Van with Driver",
