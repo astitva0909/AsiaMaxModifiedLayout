@@ -3481,6 +3481,32 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         color: white;
       }
 
+      .mobile-drawer {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        background: #0f3d2e;
+        padding: 20px;
+        transition: 0.3s ease;
+        z-index: 1000;
+      }
+
+      .mobile-drawer.active {
+        left: 0;
+      }
+
+      .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+
       /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdEQUFnRDs7QUFFaEQ7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLHVCQUF1QjtBQUMzQjs7QUFFQSw2QkFBNkI7QUFDN0I7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUEsNENBQTRDOztBQUc1QyxnQkFBZ0I7QUFDaEI7SUFDSSwrRUFBK0U7QUFDbkY7O0FBRUE7SUFDSSxzQ0FBc0M7QUFDMUM7O0FBRUEscURBQXFEO0FBQ3JEO0lBQ0ksNEVBQTRFO0FBQ2hGOztBQUVBO0lBQ0ksMkJBQTJCO0FBQy9COztBQUVBLHFCQUFxQjtBQUNyQjtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxtQkFBbUI7QUFDdkI7O0FBRUEsd0JBQXdCO0FBQ3hCO0lBQ0ksK0JBQStCO0FBQ25DOztBQUVBO0lBQ0ksc0JBQXNCO0FBQzFCOztBQUVBLGlDQUFpQztBQUNqQztJQUNJLGNBQWM7SUFDZCxlQUFlO0lBQ2YsWUFBWTtBQUNoQjs7QUFFQSwyQkFBMkI7QUFDM0I7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbIi8qIEFTSUEgTUFYIENhciBSZW50YWwgJiBUb3VycyAtIEN1c3RvbSBTdHlsZXMgKi9cblxuKiB7XG4gICAgbWFyZ2luOiAwO1xuICAgIHBhZGRpbmc6IDA7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuaHRtbCB7XG4gICAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG59XG5cbi8qIFByZXZlbnQgY2VudGVyIGFsaWdubWVudCAqL1xuLkFwcCB7XG4gICAgdGV4dC1hbGlnbjogbGVmdDtcbn1cblxuLyogRm9udCBpbXBvcnRzIC0gVXNpbmcgc2VyaWYgZm9yIGhlYWRpbmdzICovXG5AaW1wb3J0IHVybCgnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1QbGF5ZmFpcitEaXNwbGF5OndnaHRANDAwOzUwMDs2MDA7NzAwOzgwMDs5MDAmZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMDs4MDAmZGlzcGxheT1zd2FwJyk7XG5cbi8qIEFwcGx5IGZvbnRzICovXG5ib2R5IHtcbiAgICBmb250LWZhbWlseTogJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBzYW5zLXNlcmlmO1xufVxuXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2IHtcbiAgICBmb250LWZhbWlseTogJ1BsYXlmYWlyIERpc3BsYXknLCBzZXJpZjtcbn1cblxuLyogU21vb3RoIHRyYW5zaXRpb25zIGZvciBpbnRlcmFjdGl2ZSBlbGVtZW50cyBvbmx5ICovXG5idXR0b24ge1xuICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMC4zcyBlYXNlLCBjb2xvciAwLjNzIGVhc2UsIHRyYW5zZm9ybSAwLjJzIGVhc2U7XG59XG5cbmEge1xuICAgIHRyYW5zaXRpb246IGNvbG9yIDAuM3MgZWFzZTtcbn1cblxuLyogQ3VzdG9tIHNjcm9sbGJhciAqL1xuOjotd2Via2l0LXNjcm9sbGJhciB7XG4gICAgd2lkdGg6IDEwcHg7XG59XG5cbjo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2sge1xuICAgIGJhY2tncm91bmQ6ICNlOGRjYzQ7XG59XG5cbjo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xuICAgIGJhY2tncm91bmQ6ICNkNDk0M2Y7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kOiAjYjg4MDJmO1xufVxuXG4vKiBJbWFnZSBob3ZlciBlZmZlY3RzICovXG4uaG92ZXItc2NhbGUge1xuICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjVzIGVhc2U7XG59XG5cbi5ob3Zlci1zY2FsZTpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjA1KTtcbn1cblxuLyogTG9hZGluZyBhbmltYXRpb24gZm9yIGltYWdlcyAqL1xuaW1nIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiBhdXRvO1xufVxuXG4vKiBDdXN0b20gc2VsZWN0aW9uIGNvbG9yICovXG46OnNlbGVjdGlvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Q0OTQzZjtcbiAgICBjb2xvcjogd2hpdGU7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */
     </style>
   </head>
@@ -3556,7 +3582,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   data-discover="true"
                   >Home</a
                 >
-                <div
+                <!-- <div
                   class="relative"
                   x-file-name="Header"
                   x-line-number="41"
@@ -3600,7 +3626,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                       <path d="m6 9 6 6 6-6"></path>
                     </svg>
                   </button>
-                </div>
+                </div> -->
+                <a
+                  class="text-base font-medium transition-colors hover:text-[#d4943f] text-[#d4943f]"
+                  href="#ourservices"
+                  data-discover="true"
+                  >Services</a
+                >
                 <a
                   class="text-base font-medium transition-colors hover:text-[#d4943f] text-white"
                   href="contactus.html"
@@ -7859,4 +7891,27 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       "
     ></iframe>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuBtn = document.querySelector(".menu-btn");
+      const drawer = document.querySelector(".mobile-drawer");
+      const closeBtn = document.querySelector(".close-btn");
+      const overlay = document.querySelector(".menu-overlay");
+
+      menuBtn.addEventListener("click", () => {
+        drawer.classList.add("active");
+        overlay.classList.remove("hidden");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        drawer.classList.remove("active");
+        overlay.classList.add("hidden");
+      });
+
+      overlay.addEventListener("click", () => {
+        drawer.classList.remove("active");
+        overlay.classList.add("hidden");
+      });
+    });
+  </script>
 </html>
