@@ -45618,7 +45618,7 @@ function App() {
           lineNumber: 24,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/car-rentals",
+          path: "/carservice.htmls",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_CarRentals__WEBPACK_IMPORTED_MODULE_7__["default"], {
             "x-file-name": "App",
             "x-line-number": "25",
@@ -45636,7 +45636,7 @@ function App() {
           lineNumber: 25,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/van-rentals",
+          path: "/vanservice.htmls",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_VanRentals__WEBPACK_IMPORTED_MODULE_8__["default"], {
             "x-file-name": "App",
             "x-line-number": "26",
@@ -45654,7 +45654,7 @@ function App() {
           lineNumber: 26,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/van-with-driver",
+          path: "/vanservicewithdriver.html",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_VanWithDriver__WEBPACK_IMPORTED_MODULE_9__["default"], {
             "x-file-name": "App",
             "x-line-number": "27",
@@ -45672,7 +45672,7 @@ function App() {
           lineNumber: 27,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/bus-with-driver",
+          path: "/busservice.html",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_BusWithDriver__WEBPACK_IMPORTED_MODULE_10__["default"], {
             "x-file-name": "App",
             "x-line-number": "28",
@@ -45690,7 +45690,7 @@ function App() {
           lineNumber: 28,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
-          path: "/tour-packages",
+          path: "/tourpackages.html",
           element: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxDEV)(_pages_TourPackages__WEBPACK_IMPORTED_MODULE_11__["default"], {
             "x-file-name": "App",
             "x-line-number": "29",
@@ -46022,7 +46022,7 @@ const Footer = () => {
               "x-id": "Footer_45_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/car-rentals",
+                to: "/carservice.htmls",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Car Rentals"
               }, void 0, false, {
@@ -46042,7 +46042,7 @@ const Footer = () => {
               "x-id": "Footer_50_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/tour-packages",
+                to: "/tourpackages.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Tour Packages"
               }, void 0, false, {
@@ -46120,7 +46120,7 @@ const Footer = () => {
               "x-id": "Footer_67_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/car-rentals",
+                to: "/carservice.htmls",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Car Rentals"
               }, void 0, false, {
@@ -46140,7 +46140,7 @@ const Footer = () => {
               "x-id": "Footer_72_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/van-rentals",
+                to: "/vanservice.htmls",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Van Rentals"
               }, void 0, false, {
@@ -46160,7 +46160,7 @@ const Footer = () => {
               "x-id": "Footer_77_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/van-with-driver",
+                to: "/vanservicewithdriver.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Van with Driver"
               }, void 0, false, {
@@ -46180,7 +46180,7 @@ const Footer = () => {
               "x-id": "Footer_82_14",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                to: "/bus-with-driver",
+                to: "/busservice.html",
                 className: "text-gray-300 text-sm hover:text-[#d4943f] transition-colors",
                 children: "Bus Rentals"
               }, void 0, false, {
@@ -46501,19 +46501,19 @@ const Header = () => {
   const isActive = path => location.pathname === path;
   const serviceLinks = [{
     name: 'Car Rentals',
-    path: '/car-rentals'
+    path: '/carservice.htmls'
   }, {
     name: 'Van Rentals',
-    path: '/van-rentals'
+    path: '/vanservice.htmls'
   }, {
     name: 'Van with Driver',
-    path: '/van-with-driver'
+    path: '/vanservicewithdriver.html'
   }, {
     name: 'Bus with Driver',
-    path: '/bus-with-driver'
+    path: '/busservice.html'
   }, {
     name: 'Tour Packages',
-    path: '/tour-packages'
+    path: '/tourpackages.html'
   }];
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("header", {
     className: "bg-[#1a3a35] text-white sticky top-0 z-50 shadow-lg",
@@ -48543,35 +48543,35 @@ const homeServices = [{
   description: "Wide range of vehicles to suit your needs",
   features: ["Wide Range of Vehicles", "Competitive Pricing", "Well-Maintained Fleet", "Flexible Rental Terms"],
   image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80",
-  link: "/car-rentals"
+  link: "/carservice.htmls"
 }, {
   id: 2,
   title: "Van Rentals",
   description: "Spacious vans for group travel and cargo",
   features: ["10-15 Seater Options", "Cargo Vans Available", "Airport Transfers", "Daily & Monthly Rates"],
   image: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
-  link: "/van-rentals"
+  link: "/vanservice.htmls"
 }, {
   id: 3,
   title: "Van with Driver",
   description: "Professional drivers for comfortable journeys",
   features: ["Experienced Drivers", "Fuel Included", "Flexible Itinerary", "All Destinations Covered"],
   image: "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&q=80",
-  link: "/van-with-driver"
+  link: "/vanservicewithdriver.html"
 }, {
   id: 4,
   title: "Bus Service with Driver",
   description: "Comfortable buses for larger groups",
   features: ["30 & 44 Seater Coaches", "VIP Amenities", "Corporate Events", "Long Distance Travel"],
   image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=800&q=80",
-  link: "/bus-with-driver"
+  link: "/busservice.html"
 }, {
   id: 5,
   title: "Malaysia Tour Packages",
   description: "Explore Malaysia's best destinations",
   features: ["Custom Itineraries", "Popular Destinations", "All-Inclusive Packages", "Private Tours Available"],
   image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80",
-  link: "/tour-packages"
+  link: "/tourpackages.html"
 }];
 const heroServices = [{
   title: "Airport Transfer",
@@ -50033,7 +50033,7 @@ const Contact = () => {
                     lineNumber: 136,
                     columnNumber: 21
                   }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("option", {
-                    value: "car-rental",
+                    value: "carservice.html",
                     "x-file-name": "Contact",
                     "x-line-number": "137",
                     "x-column": "20",
@@ -50046,7 +50046,7 @@ const Contact = () => {
                     lineNumber: 137,
                     columnNumber: 21
                   }, undefined), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("option", {
-                    value: "van-rental",
+                    value: "vanservice.html",
                     "x-file-name": "Contact",
                     "x-line-number": "138",
                     "x-column": "20",
