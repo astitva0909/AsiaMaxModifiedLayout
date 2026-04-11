@@ -3978,7 +3978,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     x-dynamic="false"
                   >
                     <div
-                      class="flex"
+                      class="flex slider-track"
                       x-file-name="Home"
                       x-line-number="70"
                       x-column="16"
@@ -7447,6 +7447,78 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           overlay.classList.add("hidden");
         });
       });
+    </script>
+    <script>
+      const slider = document.querySelector(".slider-track");
+      const slides = slider.children;
+      const dots = document.querySelectorAll("[aria-label^='Go to slide']");
+
+      let currentIndex = 0;
+      const totalSlides = slides.length;
+
+      function updateSlider() {
+        const width = slider.parentElement.clientWidth;
+        slider.style.transform = `translateX(-${currentIndex * width}px)`;
+        slider.style.transition = "transform 0.5s ease-in-out";
+
+        // Update dots
+        dots.forEach((dot, i) => {
+          dot.classList.remove("bg-[#d4943f]");
+          dot.classList.add("bg-gray-400");
+
+          if (i === currentIndex) {
+            dot.classList.remove("bg-gray-400");
+            dot.classList.add("bg-[#d4943f]");
+          }
+        });
+      }
+
+      // Auto slide
+      let autoSlide = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      }, 3000);
+
+      // Dot click
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlider();
+
+          // reset auto slide
+          clearInterval(autoSlide);
+          autoSlide = setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+          }, 3000);
+        });
+      });
+
+      // Swipe support
+      let startX = 0;
+
+      slider.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      slider.addEventListener("touchend", (e) => {
+        let endX = e.changedTouches[0].clientX;
+        let diff = startX - endX;
+
+        if (diff > 50) {
+          currentIndex = (currentIndex + 1) % totalSlides;
+        } else if (diff < -50) {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        }
+
+        updateSlider();
+      });
+
+      // Init
+      updateSlider();
+
+      // Fix on resize
+      window.addEventListener("resize", updateSlider);
     </script>
   </body>
 </html>
