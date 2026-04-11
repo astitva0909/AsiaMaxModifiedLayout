@@ -7456,6 +7456,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       let currentIndex = 0;
       const totalSlides = slides.length;
 
+      let autoSlide;
+
       function updateSlider() {
         const width = slider.parentElement.clientWidth;
         slider.style.transform = `translateX(-${currentIndex * width}px)`;
@@ -7473,28 +7475,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         });
       }
 
-      // Auto slide
-      let autoSlide = setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlider();
-      }, 3000);
+      function startAutoSlide() {
+        autoSlide = setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateSlider();
+        }, 3000);
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlide);
+        startAutoSlide();
+      }
 
       // Dot click
       dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
           currentIndex = index;
           updateSlider();
-
-          // reset auto slide
-          clearInterval(autoSlide);
-          autoSlide = setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateSlider();
-          }, 3000);
+          resetAutoSlide();
         });
       });
 
-      // Swipe support
+      // Swipe support (mobile)
       let startX = 0;
 
       slider.addEventListener("touchstart", (e) => {
@@ -7512,10 +7514,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         }
 
         updateSlider();
+        resetAutoSlide(); // 🔥 important fix
       });
 
       // Init
       updateSlider();
+      startAutoSlide();
 
       // Fix on resize
       window.addEventListener("resize", updateSlider);
